@@ -1,0 +1,13 @@
+<html>
+<head>
+<tittle>{{pagetitle}}</title>
+</head>
+
+<body>
+<ul>
+{% for info in data %}
+<li>{{escape(info) }}</li>
+{% end %}
+</ul>
+</body>
+</html>
