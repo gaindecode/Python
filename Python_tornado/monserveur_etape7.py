@@ -18,7 +18,7 @@ class MainHandler(tornado.web.RequestHandler):
 		date=str(date)
 		self.write("\n %s" % " ".join(serverinfo))
 		self.write("\n %s" % " ".join(date))"""
-		self.render("template.html",pagetitle="System Information",data=serverinfo)
+		self.render("template.html",pagetitle="\nSystem Information",data=serverinfo)
 		self.finish()
 
 class InfoHandler(tornado.web.RequestHandler):
